@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'Bold';
+    src: url('Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('Light.ttf');
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url('Thin.ttf');
+}
+
+button:active {
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.topnav {
+ position: relative;
+  background-color: #333;
+  overflow: hidden;
+  z-index: 10;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: none;
+  position: relative;
+  left: 14%;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 0.9em;
+  opacity: 0.6;
+  font-family: 'Thin';
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+   opacity: 1;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.topnav img {
+    position: relative;
+    width: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .topnav a:not(:first-child) {display: none;  left: 0;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    .topnav img {
+    display: none;
+}
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1100px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+      
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* unvisited link */
+.topnav a:link {
+      text-decoration: none;
+}
+
+/* visited link */
+.topnav a:visited {
+      text-decoration: none;
+}
+
+/* mouse over link */
+.topnav a:hover {
+      text-decoration: none;
+}
+
+/* selected link */
+.topnav a:active {
+  text-decoration: none;
+}
+
+/*****SECOND HEADER*****/
+
+.topnavs {
+  position: relative;
+  overflow: hidden;
+    height: 5vh;
+  background-color: white;
+  margin-left: 14%;
+    margin-right: 14%;
+}
+
+.topnavs a {
+  float: left;
+  position: relative;
+    top: 10%;
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: 'Medium';
+}
+
+
+.topnav-right a {
+  z-index: 100;    
+  float: right;
+    top: 5px;
+  font-family: 'Medium';
+  font-size: 1em;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnavs a, .topnav-right {
+    float: left;
+    display: block;
+  }
+    .topnavs {
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+}
+
+/*****OFFERS*****/
+.box_offers {
+    position: relative; 
+    top: -10px;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    width: 68vw;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.box_offers ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    height: 110px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box_offers li {
+    position: relative;
+    padding: 0px 40px;
+    color: black;
+    font-family: 'Helvetica Neue';
+    display: table;
+    opacity: 0.8;
+    height: 90%;
+}
+
+.box_offers .special_offer h1 {
+    position: relative;
+    text-align: left;
+    font-size: 1em;
+    height: 90%;
+}
+
+.box_offers .special_offer h3 {
+    position: relative;
+    top: -20px;
+    text-align: left;
+    font-size: 0.6em;
+}
+
+
+.box_offers .att h3 {
+    position: relative;
+    text-align: left;
+    font-size: 0.6em;
+    height: 90%;
+}
+
+
+.box_offers .tmobile h3 {
+    position: relative;
+    text-align: left;
+    font-size: 0.6em;
+}
+
+.box_offers .verizon h3 {
+    position: relative;
+    text-align: left;
+    font-size: 0.6em;
+}
+
+/*****PRODUCT DETAILS*****/
+.col-md-4 h4 {
+    color: red;
+    font-family: 'Helvetica Neue';
+}
+
+
+.col-md-4 .one {
+    position: relative;
+    top: -15px;
+    color: black;
+    font-family: 'Light';
+    font-size: 1em;
+}
+
+.col-md-4 .two {
+    position: relative;
+    top: 70px;
+    color: black;
+    font-family: 'Medium';
+    font-size: 1em;
+}
+
+.row {
+  position: relative;
+    top: 85px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 40%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 5px;
+  background: white;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col a{
+  flex: 1 0 40%; /* The important bit. This percentage decides your columns. 
+ The percent can be px. It just represents your minimum starting width.
+  */
+  margin: 5px;
+  background: white;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-md-6 img {
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 5;
+}
+
+.rows {
+    position: relative; 
+    top: 50px;
+      width: 90vw;
+    height: 1350px;
+}
+
+.col-md-4 {
+    position: relative;
+    width: 500px;
+}
+
+.container .container-space {
+  position: relative;
+  top: 50px;
+  margin-top: 2rem;
+}
+
+.nav-link > img {
+  width: 40px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.btn-custom-color {
+  border: 2px solid #4fc08d;
+  color: #4fc08d;
+}
+.btn-custom-color:hover {
+  border: 2px solid #4fc08d;
+  background-color: #4fc08d;
+  color: #ffffff;
+}
+
+button:hover {
+    border: 2px solid #0f76cb;
+}
+
+.row button:active {
+    border: 2px solid #0f76cb;
+}
+
+.row .col:hover {
+    border: 2px solid #0f76cb;
+}
+
+.boo button: hover {
+        border: 2px solid #0f76cb;
+}
+.option1:hover {
+    border: 2px solid #0f76cb;
+}
+/*****SLIDER*****/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#result {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 30px;
+	z-index: 100;
+}
+
+
+/* unvisited link */
+.container a:link {
+  color: black;
+      text-decoration: none;
+}
+
+/* visited link */
+.container a:visited {
+  color: black;
+      text-decoration: none;
+}
+
+/* mouse over link */
+.container a:hover {
+  color: black;
+      text-decoration: none;
+}
+
+/* selected link */
+.container a:active {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* unvisited link */
+.od a:link {
+    color: #0f76cb;
+      text-decoration: none;
+}
+
+/* visited link */
+.od a:visited {
+    color: #0f76cb;
+      text-decoration: none;
+}
+
+/* mouse over link */
+.od a:hover {
+    color: #0f76cb;
+      text-decoration: none;
+}
+
+/* selected link */
+.od a:active {
+    color: #0f76cb;
+  text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#container {
+    width: 100%;
+    margin: 0 ;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.title {
+    height: 2.5em;
+    width: 75%;
+    margin-left: 12.5%;
+    background: #6bba70;
+    color: #fff;
+    text-align: center;
+    padding-top: .5em;
+    transform: rotate(-1deg);
+    box-shadow: 3px 5px 2px #999;
+}
+
+
+.faq li {
+    padding: 1.25em;
+}
+
+.faq li.q {
+    font-weight: bold;
+    font-size: 120%;
+    border-top: 1px #ccc solid;
+    cursor: pointer;
+    font-family: 'Medium';
+    font-size: 0.9em;
+}
+
+.faq li.q:nth-child(1),
+.faq li.q:nth-child(5),
+.faq li.q:nth-child(9) {
+    background: white;
+}
+
+.faq li.a {
+    font-weight: bold;
+    color: black;
+    background: #fff;
+    display: none;
+    font-family: 'Thin';
+    font-size: 1em;
+}
+
+img {
+    margin-right: .5em;
+}
+
+/********* MEDIA QUERIES ************/
+@media (max-width: 800px) {
+    #container {
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    .title {
+        width: 90%;
+        margin: 0 5%;
+        height: 3.5em;
+    }
+    
+    .faq li {
+        text-align: center;
+    }
+    
+    .faq li.a {
+        width: 85%;
+        margin-left: 5%;
+    }
+    
+}
+
+
+
+@media screen and (max-width:1100px) {
+
+body {
+    overflow-x: hidden;
+}
+
+.topnav {
+display: none;
+}
+
+    .col-md-6 {
+        display: none;
+    }
+    
+    .col-md-4 {
+        display: none;
+    }
+    
+    
+    .whatbox {
+                display: none;
+    }
+/*****SECOND HEADER*****/
+
+.topnavs {
+    display: none;
+}
+
+/*****OFFERS*****/
+.box_offers {
+    display: none;
+}
+
+    .od {
+    display: none; 
+    }
+    
+    
+    .faq {
+    display: none; 
+    }
+
+    .woot {
+    display: none; 
+    }
+    
+    .begin {
+            display: none; 
+    }
+
+/*****PRODUCT DETAILS*****/
+.container .container-space {
+    display: none;
+}
+
+/*****SLIDER*****/
+.swiper-container {
+  display: none;
+}
+
+
+#container {
+    display: none;
+}
+
+    
+    .mobile {
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 500px;
+        background-image: url('mobile.jpg');
+    }
+}
